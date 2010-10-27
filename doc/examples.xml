@@ -1,0 +1,17 @@
+<!-- 
+
+  examples.xml            SCSCP_ForHomalg package documentation
+
+  Copyright 2010, Mohamed Barakat, University of Kaiserslautern
+                  Peter Horn, University of Kassel
+                  Alexander Konovalov, University St Andrews
+-->
+
+<Chapter Label="examples">
+<Heading>Examples</Heading>
+
+Here comes text.<P/>
+
+<!-- ############################################################ -->
+
+</Chapter>
