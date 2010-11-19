@@ -16,6 +16,8 @@ list := [
          "../gap/SCSCP_ForHomalg.gi",
          ];
 
+PrintTo( "VERSION", PackageInfo( "SCSCP_ForHomalg" )[1].Version );
+
 MakeGAPDocDoc( "doc", "SCSCP_ForHomalg", list, "SCSCP_ForHomalg" );
 
 GAPDocManualLab( "SCSCP_ForHomalg" );
