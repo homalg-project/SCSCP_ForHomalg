@@ -3,7 +3,8 @@
 ##  <Heading>Purity</Heading>
 ##  This is Example B.3 in <Cite Key="BaSF"/>.
 ##  <Example><![CDATA[
-##  gap> Qxyz := HomalgFieldOfRationalsInDefaultCAS( ) * "x,y,z";;
+##  gap> Qxyz := HomalgFieldOfRationalsInDefaultCAS( ) * "x,y,z";
+##  Q[x,y,z]
 ##  gap> wmat := HomalgMatrix( "[ \
 ##  > x*y,  y*z,    z,        0,         0,    \
 ##  > x^3*z,x^2*z^2,0,        x*z^2,     -z^2, \
@@ -21,13 +22,13 @@
 ##  0:	<A codegree-[ 1, 1 ]-pure rank 2 left module presented by 3 relations for 4\
 ##   generators>
 ##  
-##  -1:	<A codegree-1-pure depth 1 left module presented by 4 relations for 3 gene\
+##  -1:	<A codegree-1-pure grade 1 left module presented by 4 relations for 3 gene\
 ##  rators>
 ##  
-##  -2:	<A cyclic reflexively pure depth 2 left module presented by 2 relations fo\
+##  -2:	<A cyclic reflexively pure grade 2 left module presented by 2 relations fo\
 ##  r a cyclic generator>
 ##  
-##  -3:	<A cyclic reflexively pure depth 3 left module presented by 3 relations fo\
+##  -3:	<A cyclic reflexively pure grade 3 left module presented by 3 relations fo\
 ##  r a cyclic generator>
 ##  of
 ##  <A non-pure rank 2 left module presented by 6 relations for 5 generators>>
@@ -105,75 +106,75 @@
 ##   . . . s
 ##  
 ##  gap> m := IsomorphismOfFiltration( filt );
-##  <An isomorphism of left modules>
+##  <A non-zero isomorphism of left modules>
 ##  gap> IsIdenticalObj( Range( m ), W );
 ##  true
 ##  gap> Source( m );
 ##  <A left module presented by 12 relations for 9 generators (locked)>
-##   gap> Display( last );
-##   0,  0,   x, -y,0,1, 0,    0,  0,
-##   x*y,-y*z,-z,0, 0,0, 0,    0,  0,
-##   x^2,-x*z,0, -z,1,0, 0,    0,  0,
-##   0,  0,   0, 0, y,-z,0,    0,  0,
-##   0,  0,   0, 0, x,0, -z,   0,  1,
-##   0,  0,   0, 0, 0,x, -y,   -1, 0,
-##   0,  0,   0, 0, 0,-y,x^2-1,0,  0,
-##   0,  0,   0, 0, 0,0, 0,    z,  0,
-##   0,  0,   0, 0, 0,0, 0,    y-1,0,
-##   0,  0,   0, 0, 0,0, 0,    0,  z,
-##   0,  0,   0, 0, 0,0, 0,    0,  y,
-##   0,  0,   0, 0, 0,0, 0,    0,  x 
-##   
-##   Cokernel of the map
-##   
-##   Q[x,y,z]^(1x12) --> Q[x,y,z]^(1x9),
-##   
-##   currently represented by the above matrix
-##   gap> Display( filt );
-##   Degree 0:
-##   
-##   0,  0,   x, -y,
-##   x*y,-y*z,-z,0, 
-##   x^2,-x*z,0, -z 
-##   
-##   Cokernel of the map
-##   
-##   Q[x,y,z]^(1x3) --> Q[x,y,z]^(1x4),
-##   
-##   currently represented by the above matrix
-##   ----------
-##   Degree -1:
-##   
-##   y,-z,0,   
-##   x,0, -z,  
-##   0,x, -y,  
-##   0,-y,x^2-1
-##   
-##   Cokernel of the map
-##   
-##   Q[x,y,z]^(1x4) --> Q[x,y,z]^(1x3),
-##   
-##   currently represented by the above matrix
-##   ----------
-##   Degree -2:
-##   
-##   Q[x,y,z]/< z, y-1 >
-##   ----------
-##   Degree -3:
-##   
-##   Q[x,y,z]/< z, y, x >
-##   gap> Display( m );
-##   1,   0,    0,  0,   0, 
-##   0,   -1,   0,  0,   0, 
-##   0,   0,    -1, 0,   0, 
-##   0,   0,    0,  -1,  0, 
-##   -x^2,-x*z, 0,  -z,  0, 
-##   0,   0,    x,  -y,  0, 
-##   0,   0,    0,  0,   -1,
-##   0,   0,    x^2,-x*y,y, 
-##   x^3, x^2*z,0,  x*z, -z 
-##   
-##   the map is currently represented by the above 9 x 5 matrix
+##  gap> Display( last );
+##  0,  0,   x, -y,0,1, 0,    0,  0,
+##  x*y,-y*z,-z,0, 0,0, 0,    0,  0,
+##  x^2,-x*z,0, -z,1,0, 0,    0,  0,
+##  0,  0,   0, 0, y,-z,0,    0,  0,
+##  0,  0,   0, 0, x,0, -z,   0,  -1,
+##  0,  0,   0, 0, 0,x, -y,   -1, 0,
+##  0,  0,   0, 0, 0,-y,x^2-1,0,  0,
+##  0,  0,   0, 0, 0,0, 0,    z,  0,
+##  0,  0,   0, 0, 0,0, 0,    y-1,0,
+##  0,  0,   0, 0, 0,0, 0,    0,  z,
+##  0,  0,   0, 0, 0,0, 0,    0,  y,
+##  0,  0,   0, 0, 0,0, 0,    0,  x
+##  
+##  Cokernel of the map
+##  
+##  Q[x,y,z]^(1x12) --> Q[x,y,z]^(1x9),
+##  
+##  currently represented by the above matrix
+##  gap> Display( filt );
+##  Degree 0:
+##  
+##  0,  0,   x, -y,
+##  x*y,-y*z,-z,0, 
+##  x^2,-x*z,0, -z 
+##  
+##  Cokernel of the map
+##  
+##  Q[x,y,z]^(1x3) --> Q[x,y,z]^(1x4),
+##  
+##  currently represented by the above matrix
+##  ----------
+##  Degree -1:
+##  
+##  y,-z,0,   
+##  x,0, -z,  
+##  0,x, -y,  
+##  0,-y,x^2-1
+##  
+##  Cokernel of the map
+##  
+##  Q[x,y,z]^(1x4) --> Q[x,y,z]^(1x3),
+##  
+##  currently represented by the above matrix
+##  ----------
+##  Degree -2:
+##  
+##  Q[x,y,z]/< z, y-1 >
+##  ----------
+##  Degree -3:
+##  
+##  Q[x,y,z]/< z, y, x >
+##  gap> Display( m );
+##  1,   0,     0,  0,   0,
+##  0,   -1,    0,  0,   0,
+##  0,   0,     -1, 0,   0,
+##  0,   0,     0,  -1,  0,
+##  -x^2,-x*z,  0,  -z,  0,
+##  0,   0,     x,  -y,  0,
+##  0,   0,     0,  0,   -1,
+##  0,   0,     x^2,-x*y,y,
+##  -x^3,-x^2*z,0,  -x*z,z
+##  
+##  the map is currently represented by the above 9 x 5 matrix
 ##  ]]></Example>
 ##  </Subsection>
 ##  <#/GAPDoc>
