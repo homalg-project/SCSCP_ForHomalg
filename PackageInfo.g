@@ -144,8 +144,7 @@ Persons := [
                        "Peter Horn\n",
                        "Fachbereich 10 Mathematik \n",
                        "Heinrich Plett Strasse 40 \n",
-                       "34132 Kassel\n",
-                       "Scotland, UK" ] ),
+                       "34132 Kassel" ] ),
     Place         := "Kassel",
     Institution   := "University of Kassel"
   ),

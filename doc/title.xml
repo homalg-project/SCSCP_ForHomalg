@@ -30,17 +30,6 @@
     <URL>http://homalg.math.rwth-aachen.de/index.php/extensions/scscpforhomalg</URL>
   </TitleComment>
   <Version>Version <#Include SYSTEM "../VERSION"></Version>
-  <Author>Thomas Bächler<Alt Only="LaTeX"><Br/></Alt>
-    <Address>
-      Lehrstuhl B für Mathematik,
-      RWTH Aachen,
-      Templergraben 64,
-      52056 Aachen,
-      Germany
-    </Address>
-    <Email>thomas@momo.math.rwth-aachen.de</Email>
-    <Homepage>http://wwwb.math.rwth-aachen.de/&tilde;thomas/</Homepage>
-  </Author>
   <Author>Mohamed Barakat<Alt Only="LaTeX"><Br/></Alt>
     <Address>
       Department of Mathematics, <Br/>
@@ -51,28 +40,27 @@
     <Email>barakat@mathematik.uni-kl.de</Email>
     <Homepage>http://www.mathematik.uni-kl.de/&tilde;barakat/</Homepage>
   </Author>
-  <Author>Max Neunhöffer<Alt Only="LaTeX"><Br/></Alt>
+  <Author>Peter Horn<Alt Only="LaTeX"><Br/></Alt>
     <Address>
-      St Andrews University,
-      School of Mathematics and Statistics,
-      Mathematical Institute,
-      North Haugh,
-      St Andrews, Fife KY16 9SS,
-      Scotland, UK
-    </Address>
-    <Email>neunhoef@mcs.st-and.ac.uk</Email>
-    <Homepage>http://www-groups.mcs.st-and.ac.uk/&tilde;neunhoef/</Homepage>
-  </Author>
-  <Author>Daniel Robertz<Alt Only="LaTeX"><Br/></Alt>
-    <Address>
-      Lehrstuhl B für Mathematik,
-      RWTH Aachen,
-      Templergraben 64,
-      52056 Aachen,
+      Fachbereich 10 Mathematik, <Br/>
+      University of Kassel, <Br/>
+      Heinrich Plett Strasse 40, <Br/>
+      34132 Kassel, <Br/>
       Germany
     </Address>
-    <Email>daniel@momo.math.rwth-aachen.de</Email>
-    <Homepage>http://wwwb.math.rwth-aachen.de/&tilde;daniel/</Homepage>
+    <Email>hornp@mathematik.uni-kassel.de</Email>
+    <Homepage>http://www.mathematik.uni-kassel.de/&tilde;hornp/</Homepage>
+  </Author>
+  <Author>Alexander Konovalov<Alt Only="LaTeX"><Br/></Alt>
+    <Address>
+      School of Mathematics and Statistics, <Br/>
+      Mathematical Institute, <Br/>
+      North Haugh, <Br/>
+      St Andrews, Fife KY16 9SS, <Br/>
+      Scotland, UK
+    </Address>
+    <Email>alexk@mcs.st-andrews.ac.uk</Email>
+    <Homepage>http://www.cs.st-andrews.ac.uk/&tilde;alexk/</Homepage>
   </Author>
   <Date>November 2010</Date>
   
