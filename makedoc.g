@@ -11,10 +11,7 @@ SetGapDocLaTeXOptions( "utf8" );
 bib := ParseBibFiles( "doc/SCSCP_ForHomalg.bib" );
 WriteBibXMLextFile( "doc/SCSCP_ForHomalgBib.xml", bib );
 
-list := [
-         "../gap/SCSCP_ForHomalg.gd",
-         "../gap/SCSCP_ForHomalg.gi",
-         ];
+Read( "ListOfDocFiles.g" );
 
 PrintTo( "VERSION", PackageInfo( "SCSCP_ForHomalg" )[1].Version );
 

@@ -10,10 +10,7 @@ HOMALG_IO.show_banners := false;
 
 LoadPackage( "GAPDoc" );
 
-list := [
-         "../gap/SCSCP_ForHomalg.gd",
-         "../gap/SCSCP_ForHomalg.gi",
-         ];
+Read( "ListOfDocFiles.g" );
 
 size := SizeScreen( );
 SizeScreen([80]);

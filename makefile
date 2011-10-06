@@ -2,7 +2,7 @@ all: doc test
 
 doc: doc/manual.six
 
-doc/manual.six: makedoc.g maketest.g \
+doc/manual.six: makedoc.g maketest.g ListOfDocFiles.g \
 		PackageInfo.g \
 		doc/SCSCP_ForHomalg.bib doc/*.xml \
 		gap/*.gd gap/*.gi examples/*.g
@@ -15,7 +15,7 @@ test:	doc
 	gap maketest.g
 
 archive: test
-	(mkdir -p ../tar; cd ..; tar czvf tar/SCSCP_ForHomalg.tar.gz --exclude ".DS_Store" --exclude "*~" SCSCP_ForHomalg/doc/*.* SCSCP_ForHomalg/doc/clean SCSCP_ForHomalg/gap/*.{gi,gd} SCSCP_ForHomalg/{CHANGES,PackageInfo.g,README,VERSION,init.g,read.g,makedoc.g,makefile,maketest.g} SCSCP_ForHomalg/examples/*.g)
+	(mkdir -p ../tar; cd ..; tar czvf tar/SCSCP_ForHomalg.tar.gz --exclude ".DS_Store" --exclude "*~" SCSCP_ForHomalg/doc/*.* SCSCP_ForHomalg/doc/clean SCSCP_ForHomalg/gap/*.{gi,gd} SCSCP_ForHomalg/{CHANGES,PackageInfo.g,README,VERSION,init.g,read.g,makedoc.g,makefile,maketest.g,ListOfDocFiles.g} SCSCP_ForHomalg/examples/*.g)
 
 WEBPOS=public_html
 WEBPOS_FINAL=~/Sites/homalg-project/SCSCP_ForHomalg
