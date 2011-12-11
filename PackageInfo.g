@@ -28,7 +28,7 @@ Subtitle := "SCSCP Capabilities for the homalg Project",
 ##  See '?Extending: Version Numbers' in GAP help for an explanation
 ##  of valid version numbers. For an automatic package distribution update
 ##  you must provide a new version number even after small changes.
-Version := "2010.11.19",
+Version := "2011.12.11",
 ##  Please adjust also the VERSION file in the package directory when
 ##  changing this.
 
@@ -282,7 +282,7 @@ Dependencies := rec(
   # list of pairs [package name, (least) version],  package name is case
   # insensitive, least version denoted with '>=' prepended to version string.
   # without these, the package will not load
-  NeededOtherPackages := [ [ "RingsForHomalg", ">= 2010.10.25" ], [ "SCSCP", ">= 1.3.0" ] ],
+  NeededOtherPackages := [ [ "RingsForHomalg", ">= 2010.10.25" ], [ "SCSCP", ">= 2.0.0" ] ],
   # without these the package will issue a warning while loading
   # SuggestedOtherPackages := [],
   SuggestedOtherPackages := [ [ "GAPDoc", ">= 1.0" ] ],
