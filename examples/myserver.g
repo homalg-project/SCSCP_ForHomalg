@@ -54,6 +54,9 @@ InstallSCSCPprocedure( "ChangeInfoLevel", ChangeInfoLevel,
 #############################################################################
 
 # Simple procedures for tests and demos
+InstallSCSCPprocedure( "Identity", x -> x, "Identity procedure for tests", 1, 1 );
+
+# HomalgToCAS procedures
 InstallSCSCPprocedure( "scscp_LaunchCAS", LaunchCAS );
 
 InstallSCSCPprocedure( "scscp_SendBlockingToCAS", function( stream, L ) SendBlockingToCAS( stream, L ); return [ stream.lines, stream.errors ]; end );
