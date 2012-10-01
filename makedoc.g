@@ -19,4 +19,4 @@ MakeGAPDocDoc( "doc", "SCSCP_ForHomalg", list, "SCSCP_ForHomalg" );
 
 GAPDocManualLab( "SCSCP_ForHomalg" );
 
-quit;
+QUIT;
