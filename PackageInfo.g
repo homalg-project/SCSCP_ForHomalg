@@ -256,8 +256,6 @@ PackageDoc := rec(
   # use same as in GAP            
   BookName  := "SCSCP_ForHomalg",
   # format/extension can be one of .zoo, .tar.gz, .tar.bz2, -win.zip
-  Archive := 
-    "http://homalg.math.rwth-aachen.de/~barakat/homalg-project/SCSCP_ForHomalg/SCSCP_ForHomalg.tar.gz",
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0.html",
   PDFFile   := "doc/manual.pdf",
